@@ -10,3 +10,19 @@ function getComputerChoice() {
         return "Scissors";
     }
 }
+
+function getPlayerChoice(message = "Rock, paper, or scissors? (r/p/s)") {
+    switch(prompt(message)) {
+        case "r":
+            return "Rock";
+            break;
+        case "p":
+            return "Paper";
+            break;
+        case "s":
+            return "Scissors";
+            break;
+        default:
+            return getPlayerChoice("Try again. Rock, paper, or scissors? (r/p/s)");
+    }
+}
