@@ -3,7 +3,7 @@ let humanScore = 0, computerScore = 0;
 const buttons = document.querySelectorAll("button");
 buttons.forEach(button => {
     button.addEventListener("click", e => {
-        playRound(button.idName, getComputerChoice());
+        playRound(button.id, getComputerChoice());
     })
 });
 
